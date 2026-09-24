@@ -35,6 +35,7 @@ metadata:
   labels:
     app: {{ .Values.emailService.name }}
 spec:
+  replicas: {{ .Values.emailService.replicaCount }}
   selector:
     matchLabels:
       app: {{ .Values.emailService.name }}

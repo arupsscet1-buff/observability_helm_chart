@@ -60,6 +60,7 @@ securityContext:
   enable: true
 
 adService:
+  replicaCount: 1
   create: true
   name: adservice
   resources:
@@ -71,6 +72,7 @@ adService:
       memory: 300Mi
 
 cartService:
+  replicaCount: 1
   create: true
   name: cartservice
   resources:
@@ -82,6 +84,7 @@ cartService:
       memory: 256Mi
 
 checkoutService:
+  replicaCount: 1
   create: true
   name: checkoutservice
   resources:
@@ -93,6 +96,7 @@ checkoutService:
       memory: 128Mi
 
 currencyService:
+  replicaCount: 1
   create: true
   name: currencyservice
   resources:
@@ -104,6 +108,8 @@ currencyService:
       memory: 256Mi
 
 emailService:
+  replicaCount: 1
+  replicaCount: 1
   create: true
   name: emailservice
   resources:
@@ -115,7 +121,7 @@ emailService:
       memory: 128Mi
 
 frontend:
-  replicaCount: 2
+  replicaCount: 1
   create: true
   name: frontend
   externalService: true
@@ -153,6 +159,7 @@ loadGenerator:
       memory: 512Mi
 
 paymentService:
+  replicaCount: 1
   create: true
   name: paymentservice
   resources:
@@ -164,6 +171,7 @@ paymentService:
       memory: 256Mi
 
 productCatalogService:
+  replicaCount: 1
   create: true
   name: productcatalogservice
   # Specifies an extra latency to any request on productcatalogservice, by default no extra latency.
@@ -177,6 +185,7 @@ productCatalogService:
       memory: 128Mi
 
 recommendationService:
+  replicaCount: 1
   create: true
   name: recommendationservice
   resources:
@@ -188,6 +197,7 @@ recommendationService:
       memory: 450Mi
 
 shippingService:
+  replicaCount: 1
   create: true
   name: shippingservice
   resources:
