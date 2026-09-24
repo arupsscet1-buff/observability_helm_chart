@@ -60,7 +60,7 @@ securityContext:
   enable: true
 
 adService:
-  replicaCount: 1
+  replicaCount: 10
   create: true
   name: adservice
   resources:
