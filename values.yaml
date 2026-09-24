@@ -115,6 +115,7 @@ emailService:
       memory: 128Mi
 
 frontend:
+  replicaCount: 2
   create: true
   name: frontend
   externalService: true
